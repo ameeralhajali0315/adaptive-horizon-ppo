@@ -1,0 +1,257 @@
+
+.experiments-page {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.experiment-chart-panel,
+.selected-seed-panel {
+  padding: 24px;
+}
+
+.experiment-toolbar,
+.experiment-toolbar > div,
+.experiment-controls {
+  display: flex;
+  align-items: center;
+}
+
+.experiment-toolbar {
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.experiment-toolbar h2,
+.selected-seed-panel h2 {
+  margin: 0;
+  font-size: 17px;
+  font-weight: 650;
+  color: #22243a;
+}
+
+.experiment-toolbar p,
+.selected-seed-panel .panel-heading p {
+  margin: 7px 0 0;
+  color: #818399;
+  font-size: 12px;
+}
+
+.experiment-controls {
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.experiment-controls label {
+  color: #74768d;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.experiment-controls select {
+  min-width: 145px;
+  border: 1px solid #e5e5ef;
+  border-radius: 9px;
+  background: #fff;
+  padding: 10px 12px;
+  color: #34364e;
+  font: inherit;
+  font-size: 12px;
+  outline-offset: 3px;
+}
+
+.experiment-legend {
+  display: flex;
+  gap: 22px;
+  margin-top: 28px;
+  color: #73758b;
+  font-size: 12px;
+}
+
+.experiment-legend span {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.experiment-dot {
+  width: 9px;
+  height: 9px;
+  display: inline-block;
+  border-radius: 3px;
+}
+
+.adaptive-dot,
+.adaptive-seed-bar {
+  background: #8170e8;
+}
+
+.fixed-dot,
+.fixed-seed-bar {
+  background: #b9c5dc;
+}
+
+.seed-chart {
+  display: grid;
+  grid-template-columns: repeat(15, minmax(0, 1fr));
+  gap: 8px;
+  align-items: stretch;
+  min-height: 270px;
+  margin-top: 18px;
+  padding: 22px 8px 0;
+  border-bottom: 1px solid #e9e9f2;
+  background-image: linear-gradient(to bottom, #ededf5 1px, transparent 1px);
+  background-size: 100% 25%;
+}
+
+.seed-column {
+  min-width: 0;
+  padding: 0 3px;
+  border: 1px solid transparent;
+  border-radius: 9px 9px 0 0;
+  background: transparent;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  color: #76788d;
+  transition: background 150ms ease, border-color 150ms ease;
+}
+
+.seed-column:hover,
+.seed-column.selected {
+  background: #f4f1ff;
+  border-color: #e3dcff;
+}
+
+.seed-bars {
+  flex: 1;
+  min-height: 0;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 4px;
+}
+
+.seed-bar-wrap {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 5px;
+}
+
+.seed-bar-value {
+  color: #686a81;
+  font-size: 9px;
+  line-height: 1.2;
+  white-space: nowrap;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+}
+
+.seed-bar {
+  width: 100%;
+  max-width: 22px;
+  min-height: 2px;
+  border-radius: 4px 4px 0 0;
+  transition: height 200ms ease;
+}
+
+.seed-label {
+  display: block;
+  padding: 9px 0;
+  font-size: 10px;
+  font-weight: 600;
+  text-align: center;
+  overflow-wrap: anywhere;
+}
+
+.experiment-chart-note {
+  margin: 16px 0 0;
+  color: #85869a;
+  font-size: 11px;
+  line-height: 1.6;
+}
+
+.experiment-empty {
+  padding: 35px 0;
+  color: #77798d;
+  text-align: center;
+  font-size: 13px;
+}
+
+.selected-seed-panel .panel-heading {
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.seed-detail-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+  margin-top: 22px;
+}
+
+.seed-detail-card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 19px;
+  border: 1px solid #ececf4;
+  border-radius: 12px;
+  background: #fcfcff;
+  min-width: 0;
+}
+
+.seed-detail-card > span {
+  color: #77798f;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.seed-detail-card > strong {
+  color: #292b43;
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: -0.7px;
+}
+
+.seed-detail-card small {
+  color: #7b7d91;
+  font-size: 11px;
+  line-height: 1.5;
+}
+
+.difference-positive {
+  color: #198768 !important;
+}
+
+.difference-negative {
+  color: #c05c66 !important;
+}
+
+@media (max-width: 850px) {
+  .seed-chart {
+    gap: 3px;
+    padding-inline: 2px;
+    overflow-x: auto;
+    grid-template-columns: repeat(15, minmax(34px, 1fr));
+  }
+
+  .seed-bar-value {
+    font-size: 8px;
+  }
+
+  .seed-detail-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .experiment-chart-panel,
+  .selected-seed-panel {
+    padding: 16px;
+  }
+}

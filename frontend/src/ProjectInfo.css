@@ -1,0 +1,163 @@
+
+.project-info-page {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.project-info-hero {
+  padding: 32px;
+  border: 1px solid #e8e5f3;
+  border-radius: 20px;
+  background: linear-gradient(135deg, #ffffff, #f6f3ff);
+}
+
+.project-info-eyebrow {
+  color: #7562df;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+.project-info-hero h1 {
+  margin: 14px 0 4px;
+  color: #28243f;
+  font-size: 38px;
+}
+
+.project-info-hero h2 {
+  max-width: 800px;
+  margin: 0 0 18px;
+  color: #5e4bc4;
+  font-size: 21px;
+  line-height: 1.5;
+}
+
+.project-info-description {
+  max-width: 900px;
+  margin: 0;
+  color: #6f6a83;
+  font-size: 14px;
+  line-height: 1.9;
+  text-align: justify;
+}
+
+.project-info-section {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.project-info-section-heading {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.project-info-section-heading > span {
+  display: grid;
+  width: 42px;
+  height: 42px;
+  flex-shrink: 0;
+  place-items: center;
+  border-radius: 12px;
+  background: #eeeaff;
+  color: #6c5ce7;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.project-info-section-heading h3 {
+  margin: 0 0 5px;
+  color: #28243f;
+  font-size: 20px;
+}
+
+.project-info-section-heading p {
+  margin: 0;
+  color: #858198;
+  font-size: 13px;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.team-card,
+.mentor-card {
+  padding: 22px;
+  border: 1px solid #e8e5f3;
+  border-radius: 16px;
+  background: #ffffff;
+}
+
+.team-member-number {
+  display: inline-grid;
+  width: 36px;
+  height: 36px;
+  place-items: center;
+  border-radius: 10px;
+  background: #f1eeff;
+  color: #6c5ce7;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.team-card h4 {
+  margin: 16px 0 12px;
+  color: #28243f;
+  font-size: 16px;
+}
+
+.team-card p {
+  margin: 8px 0 0;
+  color: #77738d;
+  font-size: 13px;
+}
+
+.team-card p strong {
+  color: #48435e;
+}
+
+.mentor-card {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.mentor-card > div {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.mentor-card span {
+  color: #858198;
+  font-size: 12px;
+}
+
+.mentor-card strong {
+  color: #302b48;
+  font-size: 14px;
+}
+
+@media (max-width: 700px) {
+  .project-info-hero {
+    padding: 22px;
+  }
+
+  .project-info-hero h1 {
+    font-size: 30px;
+  }
+
+  .project-info-hero h2 {
+    font-size: 18px;
+  }
+
+  .team-grid,
+  .mentor-card {
+    grid-template-columns: 1fr;
+  }
+}

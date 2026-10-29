@@ -1,0 +1,520 @@
+
+.methodology-page {
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+  color: #292b43;
+}
+
+.method-hero {
+  padding: 30px;
+  border: 1px solid #e7e3fb;
+  border-radius: 16px;
+  background: linear-gradient(130deg, #f1eeff, #ffffff 78%);
+}
+
+.method-eyebrow {
+  color: #7765db;
+  font-size: 10px;
+  font-weight: 750;
+  letter-spacing: 1.4px;
+}
+
+.method-hero h2 {
+  max-width: 720px;
+  margin: 13px 0 12px;
+  font-size: clamp(23px, 3vw, 32px);
+  line-height: 1.25;
+  letter-spacing: -0.8px;
+}
+
+.method-hero > p {
+  max-width: 760px;
+  color: #71738c;
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+.method-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 22px;
+}
+
+.method-tags span,
+.seed-chip-list span {
+  padding: 7px 11px;
+  border: 1px solid #e4e0f7;
+  border-radius: 8px;
+  background: #fff;
+  color: #6758bd;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.method-section {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.method-section-heading {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+}
+
+.method-number {
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  width: 35px;
+  height: 35px;
+  border-radius: 10px;
+  background: #eeeaff;
+  color: #7160d6;
+  font-size: 12px;
+  font-weight: 750;
+}
+
+.method-section-heading h2 {
+  margin: 1px 0 6px;
+  font-size: 19px;
+  letter-spacing: -0.3px;
+}
+
+.method-section-heading p {
+  margin: 0;
+  color: #85869b;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.method-card-grid,
+.schedule-grid,
+.metric-definition-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.method-card,
+.schedule-card,
+.metric-definition-grid article,
+.seed-list-card {
+  min-width: 0;
+  padding: 22px;
+  border: 1px solid #e9e9f2;
+  border-radius: 13px;
+  background: #fff;
+}
+
+.method-card-icon {
+  display: grid;
+  place-items: center;
+  width: 37px;
+  height: 37px;
+  border-radius: 11px;
+  font-weight: 750;
+  font-size: 14px;
+}
+
+.fixed-icon {
+  background: #edf2fa;
+  color: #7186a8;
+}
+
+.adaptive-icon {
+  background: #eeeaff;
+  color: #7563dd;
+}
+
+.method-card h3,
+.method-explanation h3,
+.seed-list-card h3,
+.metric-definition-grid h3 {
+  margin: 15px 0 9px;
+  font-size: 15px;
+}
+
+.method-card p,
+.method-explanation p,
+.seed-list-card > p,
+.metric-definition-grid p,
+.method-footer p {
+  margin: 0;
+  color: #77798f;
+  font-size: 12px;
+  line-height: 1.8;
+}
+
+.method-card-label {
+  display: inline-block;
+  margin-top: 18px;
+  color: #7770c8;
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.adaptive-method-card {
+  border-color: #e1dafc;
+  background: #fdfcff;
+}
+
+.method-explanation {
+  padding: 22px;
+  border: 1px solid #e9e9f2;
+  border-radius: 13px;
+  background: #fff;
+}
+
+.method-explanation > h3 {
+  margin: 0 0 17px;
+}
+
+.parameter-row {
+  padding: 16px 0;
+  border-top: 1px solid #eeeef5;
+}
+
+.parameter-row:first-of-type {
+  border-top: 0;
+}
+
+.parameter-row strong {
+  display: block;
+  margin-bottom: 7px;
+  font-size: 12px;
+}
+
+.schedule-card > span {
+  color: #797b90;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.schedule-values {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin: 18px 0;
+}
+
+.schedule-values strong {
+  font-size: 25px;
+  letter-spacing: -0.7px;
+}
+
+.schedule-values > span {
+  color: #9697aa;
+}
+
+.schedule-track {
+  height: 7px;
+  overflow: hidden;
+  border-radius: 8px;
+  background: #eeedf6;
+}
+
+.schedule-track > span {
+  display: block;
+  height: 100%;
+  width: 100%;
+  border-radius: inherit;
+}
+
+.gamma-track {
+  background: linear-gradient(90deg, #b8aafa, #7563dd);
+}
+
+.lambda-track {
+  background: linear-gradient(90deg, #b4d7f8, #6ca6e5);
+}
+
+.schedule-card > small {
+  display: block;
+  margin-top: 11px;
+  color: #898ba0;
+  font-size: 10px;
+}
+
+.method-note {
+  padding: 17px 20px;
+  border: 1px solid #eee5c9;
+  border-radius: 11px;
+  background: #fffdf6;
+}
+
+.method-note strong {
+  display: block;
+  margin-bottom: 7px;
+  color: #786638;
+  font-size: 12px;
+}
+
+.method-note p {
+  margin: 0;
+  color: #81775f;
+  font-size: 11px;
+  line-height: 1.8;
+}
+
+.protocol-stats {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.protocol-stats article {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  padding: 19px;
+  border: 1px solid #e9e9f2;
+  border-radius: 12px;
+  background: #fff;
+}
+
+.protocol-stats strong {
+  font-size: 25px;
+  letter-spacing: -0.7px;
+}
+
+.protocol-stats span {
+  color: #7e8095;
+  font-size: 11px;
+  line-height: 1.5;
+}
+
+.seed-list-card h3 {
+  margin-top: 0;
+}
+
+.seed-chip-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 18px;
+}
+
+.metric-definition-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.metric-definition-grid h3 {
+  margin-top: 0;
+}
+
+.method-footer {
+  padding: 22px;
+  border: 1px solid #e5e1fa;
+  border-radius: 13px;
+  background: #f7f5ff;
+}
+
+.method-footer strong {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 13px;
+}
+
+@media (max-width: 900px) {
+  .protocol-stats {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .metric-definition-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .method-hero {
+    padding: 21px;
+  }
+
+  .method-card-grid,
+  .schedule-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .protocol-stats {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .method-card,
+  .schedule-card,
+  .method-explanation,
+  .seed-list-card {
+    padding: 17px;
+  }
+}
+.schedule-chart-card {
+  margin-top: 24px;
+  padding: 24px;
+  background: #ffffff;
+  border: 1px solid #e9e7f2;
+  border-radius: 20px;
+  box-shadow: 0 8px 28px rgba(38, 30, 80, 0.04);
+}
+
+.schedule-chart-heading {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.schedule-chart-heading h3 {
+  margin: 0 0 6px;
+  color: #24213a;
+  font-size: 18px;
+}
+
+.schedule-chart-heading p {
+  margin: 0;
+  color: #858198;
+  font-size: 13px;
+}
+
+.chart-badge {
+  flex-shrink: 0;
+  padding: 7px 11px;
+  border-radius: 9px;
+  background: #f0edff;
+  color: #705ce0;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.schedule-chart {
+  width: 100%;
+  height: 320px;
+}
+
+.schedule-endpoints {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+  margin-top: 20px;
+}
+
+.schedule-endpoints > div {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 16px;
+  border-radius: 12px;
+  background: #f8f7fc;
+}
+
+.schedule-endpoints span {
+  color: #77738d;
+  font-size: 12px;
+}
+
+.schedule-endpoints strong {
+  color: #28243f;
+  font-size: 20px;
+}
+
+@media (max-width: 600px) {
+  .schedule-chart-card {
+    padding: 16px;
+  }
+
+  .schedule-chart-heading {
+    flex-direction: column;
+  }
+
+  .schedule-endpoints {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+.schedule-formula-card {
+  margin-top: 20px;
+  padding: 24px;
+  background: #ffffff;
+  border: 1px solid #e9e7f2;
+  border-radius: 18px;
+}
+
+.schedule-formula-card h3 {
+  margin: 0 0 8px;
+  color: #28243f;
+  font-size: 18px;
+}
+
+.schedule-formula-card > p {
+  color: #77738d;
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+.formula-block {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  padding: 15px 0;
+  border-bottom: 1px solid #eeecf5;
+}
+
+.formula-block span {
+  color: #77738d;
+  font-size: 13px;
+}
+
+.formula-block code {
+  color: #6e5cdb;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.schedule-formula-card .formula-note {
+  margin: 16px 0 0;
+  font-size: 12px;
+}
+
+@media (max-width: 600px) {
+  .schedule-formula-card {
+    padding: 16px;
+  }
+
+  .formula-block {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .formula-block code {
+    overflow-wrap: anywhere;
+  }
+}
+
+
+.method-note {
+  margin-top: 20px;
+  padding: 20px 22px;
+  background: #f5f2ff;
+  border: 1px solid #e7e0ff;
+  border-radius: 14px;
+}
+
+.method-note strong {
+  display: block;
+  margin-bottom: 8px;
+  color: #5e4bc4;
+  font-size: 14px;
+}
+
+.method-note p {
+  margin: 0;
+  color: #625d78;
+  font-size: 13px;
+  line-height: 1.8;
+}
